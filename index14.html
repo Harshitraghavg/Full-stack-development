@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes</title>
+    <style>
+      button {
+        border: none;
+        background-color: rgb(160, 239, 64);
+        color: white;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: rgb(20, 20, 19);
+      }
+      button:active {
+        background-color: green;
+      }
+      input {
+        outline: none;
+        color: brown;
+      }
+      input:focus {
+        border: 2px solid yellow;
+      }
+      .container{
+        height: 100px;
+        width: 350px;
+        border: 10px;
+        background-color: #2b9718;
+        padding: 20px;
+        margin: 300px auto;
+        border: 3px solid rgb(219, 108, 24);
+        transition: all 2s ease-in-out;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h2>hover effect on button</h2>
+    <button>Touch Here</button>
+    <input type="text" placeholder="click here to see the focus effect" />
+    </div>
+  </body>
+</html>
